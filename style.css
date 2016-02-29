@@ -10,7 +10,7 @@ header{
     width: 100%;
     clear: both;
 }
-/*    Шапка сайта    */
+/*               Шапка сайта                  */
 .logo {
 	width: 50%;
     height: 144px;
@@ -65,9 +65,9 @@ header{
     padding: 10px 15px;
     text-align: center;
 }
-/*     Конец шапки сайта      */
+/*            Конец шапки сайта           */
 
-/*     Начало блока main      */
+/*           Начало блока main             */
 
 .select {    
 	width: 100%;    
@@ -111,4 +111,110 @@ header{
     border: 1px solid #de1e29;
     color: #fff;
     font-size: 20px;
+}
+
+/*            Footer - Подвал             */
+
+footer {
+    height: 394px;
+    width: 100%;
+    background: #353535;
+}
+.footer {
+	width: 100%;
+    height: 343px;
+}
+.footer h6 {
+	color: #fff;
+    font-size: 14px;
+}
+.footer-box1{
+    width: 55%;
+    height: 100%;
+    padding-left: 200px;
+    float: left;
+}
+.footer-box1 h6{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.footer-content {
+	display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.footer-content ul {
+    list-style: none;
+    line-height: 20px;
+}
+.footer-content:first-child ul li:nth-child(4){
+    margin-bottom: 15px;
+}
+.footer-content:nth-child(2) ul li:nth-child(2){
+    margin-bottom: 15px;
+}
+.footer-content:nth-child(2) ul li:nth-child(7){
+    margin-bottom: 15px;
+}
+.footer-content ul a {
+	color: #D4D4D4;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-content ul a:hover{
+    text-decoration: underline;
+}
+.footer-box2{
+    width: 30%;
+    height: 100%;   
+    float: right;      
+}
+.footer-box2 h6:first-child{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.footer-box2 .qwestion{
+    display: block;
+    position: relative;
+    margin-left: 40px;
+}
+.footer-box2 .qwestion h6 {
+    display: block;
+    float: left;
+    border-bottom: 1px dashed #666666;
+    padding-bottom: 5px;
+    margin-left: 35px;
+}
+.footer-box2 .qwestion img{
+    display: block;
+    position: absolute;
+    top: -0px;
+    left: 4px;
+}
+.footer-box2 ul {
+	list-style: none;
+    padding-left: 40px;   
+    margin-bottom: 30px;
+}
+.footer-box2 ul li{
+    display: inline-block;
+    padding-right: 5px;
+}
+.footer-box2 ul li a img{
+    border-radius: 50%;
+}
+.copyright {
+	height: 50px;
+    width: 90%;
+    border-top:  1px solid #585858;
+    margin-left: auto;
+    margin-right: auto;
+}
+.copyright p{
+    color: #585858;
+    text-align: center;
+    padding-top: 15px;
+    vertical-align: bottom;
 }
