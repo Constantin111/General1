@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #FBFBFB;
+}
+.clearfix {
+	content: "";
+    width: 100%;
+    clear: both;
+}
+/*    Шапка сайта    */
+.logo {
+	width: 50%;
+    height: 144px;
+    float: left;
+}
+.logo .logo-box {
+	float:right;
+    height: 100%;
+    width: 90%;
+    border-bottom: 1px solid #F4F4F4;
+} 
+.logo-box a{
+    display: block;
+    width: 203px;
+    margin-left: 16%;
+    margin-top: 41px;
+}
+.info {
+	width: 50%;
+    height: 144px;
+    float: right;
+}
+.info .info-box {
+	float:left;
+    height: 100%;
+    width: 90%;
+    border-bottom: 1px solid #F4F4F4;
+} 
+
+.slogan {
+    float: left;
+	width: 100%;
+    height: 200px;
+}
+.slogan .slogan-box {
+	height: 50%;
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.slogan-box h1{
+    font-size: 58px;
+    text-align: center;
+    padding-top: 34px;
+}
+.slogan-box h1 span{
+    color: #E11F2A;
+}
+.slogan-box p{
+    font-size: 18px;
+    color: #919191;
+    padding: 10px 15px;
+    text-align: center;
+}
+/*     Конец шапки сайта      */
+
+/*     Начало блока main      */
+
+.select {    
+	width: 100%;    
+    background: #848683;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    letter-spacing: 30px;
+    margin-bottom: -163px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.7;
+}
+.select-box {
+	display: inline-block;
+    height: 44px;
+    background: #DE1E29;
+    width: 260px;
+    overflow: hidden;
+    border-radius: 6px;    
+}
+.select-avto {
+	width: 105%;
+    height: 100%;
+    padding-left: 20px;
+    background: #fbfbfb;
+    font-size: 16px;
+    font-weight: 700;
+}
+.select-work {
+    width: 105%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.select-button {
+	width: 100%;
+    height: 100%;
+    background: #de1e29;
+    border: 1px solid #de1e29;
+    color: #fff;
+    font-size: 20px;
+}
