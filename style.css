@@ -131,7 +131,7 @@ header{
 .marker-box1  ul{
     display: block;
     float: right;
-    width: 70%;
+    max-width: 661px;
     list-style: none;
     padding-top: 60px;
 }
@@ -180,6 +180,55 @@ header{
 }
 /*            Конец значений иконок           */
 
+/*            Инструкция для пользователя     */
+
+.instruction {
+	width: 100%;
+    min-height: 458px;
+    background: #F4F4F4;
+}
+.instruction-box1 h2 {
+	text-align: center;
+    font-size: 44px;
+    padding-top: 60px
+}
+.instruction-box1 h2 span {
+    color: #e11f2a;
+}
+.instruction-box1 p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    color: #828282;
+}
+.instruction-box2 {
+	width: 100%;
+}
+.instruction-box2 .instruction-note {
+	width: 33.3%;
+    min-width: 300px;
+    display: inline-block;
+    text-align: center;
+    color: #7B7B7B;
+    padding-top: 100px;
+    margin-right: -4px;
+    
+}
+.istruction-content{
+    display: inline-block;
+    max-width: 300px;
+}
+.instruction-note span {    
+    font-size: 80px; 
+    line-height: 60px;
+    margin-right: 10px;
+}
+.instruction-note p {
+	display: block;
+    float: right;
+    width: 230px;
+    text-align: left;
+}
 /*                                   Footer - Подвал                                */
 
 footer {
