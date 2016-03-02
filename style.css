@@ -10,7 +10,7 @@ header{
     width: 100%;
     clear: both;
 }
-/*               Шапка сайта                  */
+/*                                   Шапка сайта                                       */
 .logo {
 	width: 50%;
     height: 144px;
@@ -67,7 +67,9 @@ header{
 }
 /*            Конец шапки сайта           */
 
-/*           Начало блока main             */
+/*                                    Начало блока main                                */
+
+/*           Кнопки выбора                 */
 
 .select {    
 	width: 100%;    
@@ -113,7 +115,72 @@ header{
     font-size: 20px;
 }
 
-/*            Footer - Подвал             */
+/*            Конец кнопок выбора            */
+
+/*            Значения иконок                */
+
+.marker {
+	height: 204px;
+    background: #FBFBFB;
+}
+.marker-box1 {
+	height: 100%;
+    width: 70%;
+    float: left;
+}
+.marker-box1  ul{
+    display: block;
+    float: right;
+    width: 70%;
+    list-style: none;
+    padding-top: 60px;
+}
+.marker-box1  ul li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 43px;
+    padding-left: 30px;
+    position: relative;
+}
+.marker-box1  ul li img{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -14px;
+}
+.marker-box1 ul li:nth-child(1) {
+    width: 230px;
+}
+.marker-box1 ul li:nth-child(4) {
+    width: 230px;
+}
+.marker-box1 ul li:nth-child(2){
+    width: 130px;
+}
+.marker-box1 ul li:nth-child(5){
+    width: 130px;
+}
+.marker-box2 {
+	height: 100%;
+    width: 30%;
+    float: right;
+}
+.marker-box2 span{
+    display: block;
+    position: relative;
+    margin-top: 94px;
+}
+.marker-box2 span img{
+    display: block;
+    position: absolute;
+    top: -11px;
+}
+.marker-box2 span p{
+    padding-left: 70px;
+}
+/*            Конец значений иконок           */
+
+/*                                   Footer - Подвал                                */
 
 footer {
     height: 394px;
