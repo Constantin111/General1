@@ -268,6 +268,7 @@ header{
 .servises-box2,.servises-box3 {
 	display: inline-block;
     width: 50%;
+    min-width: 500px;
     margin-right: -4px;
     padding-bottom: 70px;
     min-height: 400px;   
@@ -275,6 +276,7 @@ header{
 }
 .servises-content {
     max-width: 440px;
+    min-width: 437px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -301,7 +303,7 @@ header{
     font-style: italic;
 }
 .servises-box2 .servises-content {
-	 margin-left: 180px;
+	 margin-left: 25%;
 } 
 
 /*                                   Footer - Подвал                                */
