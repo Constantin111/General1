@@ -88,15 +88,32 @@ header{
     margin-bottom: -163px;
     position: relative;
     z-index: 1;
-    opacity: 0.95;
+    opacity: 0.7;
+}
+.select:hover{
+    opacity: 1;
 }
 .select-box {
 	display: inline-block;
+    position: relative;
     height: 44px;
     background: #DE1E29;
     width: 260px;
     overflow: hidden;
-    border-radius: 6px;    
+    border-radius: 6px;  
+}
+.select-box .select-cursor {
+	display: block;
+    position: absolute;
+    right: 5px;
+    top: 18px;
+    font-size: 35px;
+    pointer-events: none;
+    -webkit-transform: rotate(90deg); // разворот элемента для разных бразуеров
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .select-avto {
 	width: 105%;
@@ -114,12 +131,25 @@ header{
     font-weight: 700;
 }
 .select-button {
+    display: block;
 	width: 100%;
     height: 100%;
     background: #de1e29;
     border: 1px solid #de1e29;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
+     box-shadow: 0 3px 3px 3px #de1e29;
+    -webkit-box-shadow: 0 3px 3px 3px #de1e29;
+    -moz-box-shadow: 0 3px 3px 3px #de1e29;
+}
+.select-button:hover {
+    background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de1e29+1,db6b71+45,207cca+100,207cca+100,de1e29+100&1+0,0.97+100 */
+background: -moz-linear-gradient(top,  rgba(222,30,41,1) 0%, rgba(222,30,41,1) 1%, rgba(219,107,113,0.99) 45%, rgba(222,30,41,0.97) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1%,rgba(219,107,113,0.99) 45%,rgba(222,30,41,0.97) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1%,rgba(219,107,113,0.99) 45%,rgba(222,30,41,0.97) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', endColorstr='#f7de1e29',GradientType=0 ); /* IE6-9 */
+
 }
 
 /*            Конец кнопок выбора            */
@@ -410,4 +440,7 @@ footer {
     text-align: center;
     padding-top: 15px;
     vertical-align: bottom;
+}
+.select-cursor {
+    
 }
