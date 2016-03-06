@@ -18,6 +18,7 @@ header{
 	width: 50%;
     height: 144px;
     float: left;
+    min-width: 340px;
 }
 .logo .logo-box {
 	float:right;
@@ -49,13 +50,14 @@ header{
     list-style: none;
     color: #919191;
 }
-.main-menu>li {
-    
+.main-menu {
+    min-width: 150px;
 }
 .menu .sub-menu {
 	display: none;
     position: absolute;
     z-index: 1;
+    
 }
 
 .main-menu>li span {
@@ -69,6 +71,23 @@ header{
 }
 .main-menu>li:hover .sub-menu {
 	display: block;
+}
+.sub-menu li {
+	background: #F4F4F4;
+    
+    border: 1px solid #848683;
+    margin-bottom: -1px;
+}
+.sub-menu li a:hover {
+    background: #4a74a6;
+    color: #fff;
+}
+.sub-menu li a{
+    display: inline-block;
+    width: 150px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #919191;
 }
 /*               Конец меню               */
 .info a {
@@ -110,6 +129,7 @@ header{
     padding-left: 28px;
     background: #FBFBFB;
     border: none;
+    cursor: pointer;
 }
 .info-box1 .personal-account {
     display: inline-block;
@@ -207,6 +227,7 @@ header{
     background: #fbfbfb;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 .select-work {
     width: 105%;
@@ -214,6 +235,7 @@ header{
     padding-left: 20px;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 .select-button {
     display: block;
@@ -256,6 +278,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 	height: 100%;
     width: 70%;
     float: left;
+    overflow: hidden;
 }
 .marker-box1  ul{
     display: block;
@@ -288,6 +311,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     width: 30%;
     float: right;
     min-width: 340px;
+    overflow: hidden;
 }
 .marker-box2 div{
     display: block;
