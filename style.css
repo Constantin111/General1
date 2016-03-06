@@ -8,9 +8,9 @@ body {
 header{
     background: #FBFBFB;
 }
-.clearfix {
+.clearfix:after {
 	content: "";
-    width: 100%;
+    display: table;
     clear: both;
 }
 /*                                   Шапка сайта                                       */
@@ -36,13 +36,93 @@ header{
     height: 144px;
     float: right;
 }
+/*               Меню сайта            */
+.info .menu {
+	display:block;
+    width: 30%;    
+    margin-left: 48px;
+    overflow: hidden;
+    float: left;
+    padding-top: 60px;
+}
+.info nav ul {
+    list-style: none;
+    color: #919191;
+}
+.main-menu>li {
+    
+}
+.menu .sub-menu {
+	display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.main-menu>li span {
+    display: inline-block;
+    position: relative;
+    padding-left: 49px;
+	font-size: 17px;
+    color: #919191;
+    background: url(images/menu.png) no-repeat 0px 1px;
+    cursor: pointer;
+}
+.main-menu>li:hover .sub-menu {
+	display: block;
+}
+/*               Конец меню               */
+.info a {
+    text-decoration: none;
+}
 .info .info-box {
-	float:left;
+    display: block;	
     height: 100%;
     width: 90%;
     border-bottom: 1px solid #F4F4F4;
+    overflow: hidden;
 } 
-
+.info .info-box1 {
+    display: block;	
+    overflow: hidden;
+    padding-top: 60px;
+}
+.info-select-box {
+    display: block;
+    position: relative;
+    width: 160px;
+    overflow: hidden; 
+    font-family: "Times New Roman";
+    color: #919191;
+    float: left;
+}
+.info-select-box option {
+    font-family: "Times New Roman";
+    color: #919191;   
+}
+.info-select-box .select-cursor {
+    top: -3px;
+    right: 135px;
+    font-size: 23px;
+}
+.select-info-box {
+    font-size: 17px;
+    width: 110%;
+    padding-left: 28px;
+    background: #FBFBFB;
+    border: none;
+}
+.info-box1 .personal-account {
+    display: inline-block;
+    min-width: 140px;
+    margin-left: 20%;
+    
+}
+.personal-account a {
+    font-size: 17px;
+    color: #919191;
+    padding-left: 20px;
+    background: url("images/personal-account.png") no-repeat 0px 4px;
+}
 .slogan {
     float: left;
 	width: 100%;
@@ -107,7 +187,7 @@ header{
     -webkit-box-shadow: 1px 1px 0px 1px #de1e29;
     -moz-box-shadow: 1px 1px 0px 1px #de1e29;
 }
-.select-box .select-cursor {
+.select-cursor {
 	display: block;
     position: absolute;
     right: 5px;
@@ -197,16 +277,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     top: -5px;
     left: 0px;
 }
-.marker-box1 ul li:nth-child(1) {
+.marker-box1 ul li:nth-child(3n+1) {
     width: 230px;
 }
-.marker-box1 ul li:nth-child(4) {
-    width: 230px;
-}
-.marker-box1 ul li:nth-child(2){
-    width: 130px;
-}
-.marker-box1 ul li:nth-child(5){
+.marker-box1 ul li:nth-child(3n+2){
     width: 130px;
 }
 .marker-box2 {
@@ -380,6 +454,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     margin-bottom: 20px;
     color: #4B4B4B;
 }
+.now-search ul li:nth-child(4n+1) {
+    opacity: 0.15;
+}
+.now-search ul li:nth-child(even) {
+    opacity: 0.4;
+}
+.now-search ul li:nth-child(3) {
+    background: #ffffff
+}
 .now-search-button {
     max-width: 260px;
     margin-left: auto;
@@ -522,7 +605,4 @@ footer {
     text-align: center;
     padding-top: 15px;
     vertical-align: bottom;
-}
-.select-cursor {
-    
 }

@@ -8,14 +8,43 @@
     <link rel="stylesheet" href="style.css"   >
 </head>
 <body>
-    <header>
+    <header class="clearfix">
         <div class="header logo">
             <div class="logo-box">
                 <a href=""><img src="images/logo.jpg" alt="lotogip"></a>
             </div>
         </div>
-        <div class="header info">
-            <div class="info-box"></div>
+        <div class="header info cleafix">
+          <div class="info-box">          
+           <nav class="menu">
+               <ul class="main-menu">
+                  <li><span>Меню</span>
+                      <ul class="sub-menu">
+                           <li><a href="#">Страница 1</a></li>
+                           <li><a href="#">Страница 2</a></li>
+                           <li><a href="#">Страница 3</a></li>
+                           <li><a href="#">Страница 4</a></li>
+                           <li><a href="#">Страница 5</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </nav>
+           <div class="info-box1">
+               <div class="info-select-box">
+                    <select name="" id="" class="select-info-box">
+                        <option value="">Выберите город</option>
+                        <option value="">Новосибирск</option>
+                        <option value="">Красноярск</option>
+                        <option value="">Самара</option>
+                        <option value="">Волгоград</option>
+                    </select>
+                    <span class="select-cursor">&#8250;</span>
+                </div>
+                <div class="personal-account">
+                    <a href="">Личный кабинет</a>
+                </div>
+            </div>
+          </div>
         </div>
         <section class="header slogan">
             <div class="slogan-box">
@@ -25,7 +54,7 @@
                 <p>Bibihelper - информационная система для решения всего спектра задач, связанных со срочным и плановым обслуживанием автомобиля</p>
             </div>
         </section>
-        <div class="clearfix"></div>
+        
     </header>
     <main>
         <div class="select">
@@ -228,7 +257,7 @@
                 <span>или</span>
                 <input type="button" class="now-search-button2" value="Расширенный поиск">
             </div>
-        </section>
+        </section>        
     </main>
     
 <!--                                Footer - Подвал                            -->
