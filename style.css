@@ -66,7 +66,8 @@ header{
     padding-left: 49px;
 	font-size: 17px;
     color: #919191;
-    background: url(images/menu.png) no-repeat 0px 1px;
+    background: url(images/menu.png) no-repeat 0px 2px;
+    -moz-background: url(images/menu.png) no-repeat 0px 4px;
     cursor: pointer;
 }
 .main-menu>li:hover .sub-menu {
@@ -125,7 +126,7 @@ header{
 }
 .select-info-box {
     font-size: 17px;
-    width: 110%;
+    width: 111%;
     padding-left: 28px;
     background: #FBFBFB;
     border: none;
@@ -202,10 +203,15 @@ header{
     overflow: hidden;
     border-radius: 6px;  
 }
+.select-box select option {
+    padding-left: 10px;
+    color: #848683;
+}
 .select .select-box:last-child:hover {
-	box-shadow: 1px 1px 0px 1px #de1e29;
-    -webkit-box-shadow: 1px 1px 0px 1px #de1e29;
-    -moz-box-shadow: 1px 1px 0px 1px #de1e29;
+	 box-shadow: 1px 1px 0px 1px #812c30;
+    -webkit-box-shadow: 1px 1px 0px 1px #812c30;
+    -moz-box-shadow: 1px 1px 0px 1px #812c30;
+    
 }
 .select-cursor {
 	display: block;
@@ -221,21 +227,25 @@ header{
     transform: rotate(90deg);
 }
 .select-avto {
-	width: 105%;
+	width: 107%;
     height: 100%;
     padding-left: 20px;
     background: #fbfbfb;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 7px;
 }
 .select-work {
-    width: 105%;
+    width: 107%;
     height: 100%;
     padding-left: 20px;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 7px;
 }
 .select-button {
     display: block;
@@ -245,17 +255,14 @@ header{
     border: 1px solid #de1e29;
     color: #fff;
     font-size: 20px;
-    cursor: pointer;
-     
+    cursor: pointer;   
 }
 .select-button:hover {
-    border: none;
-    background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de1e29+1,db6b71+45,207cca+100,207cca+100,de1e29+100&1+0,0.97+100 */
+   background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de1e29+1,db6b71+45,207cca+100,207cca+100,de1e29+100&1+0,0.97+100 */
 background: -moz-linear-gradient(top,  rgba(222,30,41,1) 0%, rgba(222,30,41,1) 1%, rgba(219,107,113,0.99) 45%, rgba(222,30,41,0.97) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1%,rgba(219,107,113,0.99) 45%,rgba(222,30,41,0.97) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1%,rgba(219,107,113,0.99) 45%,rgba(222,30,41,0.97) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', endColorstr='#f7de1e29',GradientType=0 ); /* IE6-9 */
-
 }
 .select-button:active{
     border: none;
@@ -511,6 +518,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+}
+.now-search-button1:hover {
+    box-shadow: 1px 1px 0px 1px #812c30;
+    -webkit-box-shadow: 1px 1px 0px 1px #812c30;
+    -moz-box-shadow: 1px 1px 0px 1px #812c30;
+    border: none;
+    background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de1e29+1,db6b71+45,207cca+100,207cca+100,de1e29+100&1+0,0.97+100 */
+background: -moz-linear-gradient(top,  rgba(222,30,41,1) 0%, rgba(222,30,41,1) 1%, rgba(219,107,113,0.99) 45%, rgba(222,30,41,0.97) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1%,rgba(219,107,113,0.99) 45%,rgba(222,30,41,0.97) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1%,rgba(219,107,113,0.99) 45%,rgba(222,30,41,0.97) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', endColorstr='#f7de1e29',GradientType=0 ); /* IE6-9 */
+}
+.now-search-button1:click {
+    border: none;
 }
 .now-search-button2 {
     display: block;
