@@ -496,6 +496,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .now-search ul li:nth-child(3) {
     background: #ffffff;
+    border-bottom: 1px solid #5A7191;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
