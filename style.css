@@ -475,14 +475,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     margin-bottom: 50px;
 }
 .now-search ul {
+    display: block;
     list-style: none;
     font-size: 1.1em;
     font-weight: 300;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
 }
 .now-search ul li {
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 10px 0;
     color: #4B4B4B;
 }
 .now-search ul li:nth-child(4n+1) {
@@ -492,7 +495,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     opacity: 0.4;
 }
 .now-search ul li:nth-child(3) {
-    background: #ffffff
+    background: #ffffff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+.now-search-left {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    text-align: right;
+    padding-right: 6px;
 }
 .now-search-button {
     max-width: 260px;
