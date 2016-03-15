@@ -1,9 +1,17 @@
+@font-fase {
+    font-family: eurofurence; /* Имя шрифта */
+    src: url(fonts/eurofurence.ttf); /* Путь к файлу со шрифтом */
+}
 * {
     margin: 0;
     padding: 0;
 }
 body {
     background: #FBFBFB;
+    font-family: eurofurence;
+}
+h6{
+    font-size: 17px;
 }
 header{
     background: #FBFBFB;
@@ -255,7 +263,8 @@ header{
     border: 1px solid #de1e29;
     color: #fff;
     font-size: 20px;
-    cursor: pointer;   
+    cursor: pointer;
+    outline: none;
 }
 .select-button:hover {
    background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de1e29+1,db6b71+45,207cca+100,207cca+100,de1e29+100&1+0,0.97+100 */
@@ -532,6 +541,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    outline: none;
 }
 .now-search-button1:hover {
     box-shadow: 1px 1px 0px 1px #812c30;
@@ -570,7 +580,6 @@ footer {
 }
 .footer h6 {
 	color: #fff;
-    font-size: 14px;
 }
 .footer-box1{
     width: 55%;
@@ -604,7 +613,7 @@ footer {
 .footer-content ul a {
 	color: #D4D4D4;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 .footer-content ul a:hover{
     text-decoration: underline;
