@@ -1,6 +1,9 @@
 @font-fase {
     font-family: eurofurence; /* Имя шрифта */
-    src: url(fonts/eurofurence.ttf); /* Путь к файлу со шрифтом */
+    src: url(fonts/eurofurence.ttf), /* Путь к файлу со шрифтом */
+    src: url(fonts/eurofurence.eot),
+    src: url(fonts/eurofurence.woff),
+    src: url(fonts/eurofurence.woff2);
 }
 * {
     margin: 0;
@@ -139,6 +142,7 @@ header{
     background: #FBFBFB;
     border: none;
     cursor: pointer;
+    outline: none;
 }
 .info-box1 .personal-account {
     display: inline-block;
