@@ -37,7 +37,7 @@
 
 body {
     background: #FBFBFB;
-    font-family: "Roboto light";    
+    font-family: "Roboto light", sans-serif;    
 }
 h1 {
     font-weight: 500;
@@ -77,7 +77,7 @@ h2 {
     padding-top: 60px;
     padding-left: 0;
     padding-right: 0;
-    font-family: "Roboto light";
+    font-family: "Roboto light", sans-serif;
 }
 .info-box1 a{
     white-space: nowrap;
@@ -89,12 +89,12 @@ h2 {
     position: relative;
     width: 160px;
     overflow: hidden; 
-    font-family: "Roboto light";
+    font-family: "Roboto light", sans-serif;
     color: #919191;
     float: left;
 }
 .info-select-box option {
-    font-family: "Roboto light";
+    font-family: "Roboto light", sans-serif;
     color: #919191;   
 }
 .info-select-box .select-cursor {
@@ -170,7 +170,7 @@ h2 {
     color: #909090;
     padding: 10px 15px;
     text-align: center;
-    font-family: "Roboto light";
+    font-family: "Roboto light", sans-serif;
 }
 /*   //////////////////////////      кнопки выбора        //////////////////////      */
 
