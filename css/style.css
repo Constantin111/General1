@@ -5,157 +5,143 @@
     src: url(fonts/eurofurence.woff),
     src: url(fonts/eurofurence.woff2);
 }
-* {
-    margin: 0;
-    padding: 0;
+@font-fase {
+    font-family: eurofurence; /* Имя шрифта */
+    src: url(fonts/eurofurence-bold-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(fonts/eurofurence-bold-webfont.eot),
+    src: url(fonts/eurofurence-bold-webfont.woff),
+    src: url(fonts/eurofurence-bold-webfont.woff2);
 }
+@font-fase {
+    font-family: eurofurence; /* Имя шрифта */
+    src: url(fonts/roboto-light-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(fonts/roboto-light-webfont.eot),
+    src: url(fonts/roboto-light-webfont.woff),
+    src: url(fonts/roboto-light-webfont.woff2);
+}
+@font-fase {
+    font-family: eurofurence; /* Имя шрифта */
+    src: url(fonts/roboto-medium-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(fonts/roboto-medium-webfont.eot),
+    src: url(fonts/roboto-medium-webfont.woff),
+    src: url(fonts/roboto-medium-webfont.woff2);
+}
+@font-fase {
+    font-family: eurofurence; /* Имя шрифта */
+    src: url(fonts/roboto-thin-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(fonts/roboto-thin-webfont.eot),
+    src: url(fonts/roboto-thin-webfont.woff),
+    src: url(fonts/roboto-thin-webfont.woff2);
+}
+/*  //////////////////////         ///////////////////////////     */
+
 body {
     background: #FBFBFB;
+    font-family: "Roboto light";    
+}
+h1 {
+    font-weight: 500;
+    margin: 0;
     font-family: eurofurence;
 }
 h6{
-    font-size: 17px;
+    font-size: 14px;
 }
-header{
-    background: #FBFBFB;
+h2 {
+    font-weight: 500;
+    font-family: eurofurence;
 }
-.clearfix:after {
-	content: "";
-    display: table;
-    clear: both;
-}
-/*                                   Шапка сайта                                       */
-.logo {
-	width: 50%;
-    height: 144px;
-    float: left;
-    min-width: 340px;
-}
-.logo .logo-box {
-	float:right;
-    height: 100%;
-    width: 90%;
+.logotype {
+	padding-bottom: 30px;
     border-bottom: 1px solid #F4F4F4;
-} 
-.logo-box a{
-    display: block;
-    width: 203px;
-    margin-left: 16%;
-    margin-top: 41px;
 }
-.info {
-	width: 50%;
-    height: 144px;
-    float: right;
+.logo {
+	padding-top: 40px;
 }
-/*               Меню сайта            */
-.info .menu {
-	display:block;
-    width: 30%;    
-    margin-left: 48px;
-    overflow: hidden;
-    float: left;
-    padding-top: 60px;
+.logo-2 {
+    min-width: 570px;
 }
-.info nav ul {
-    list-style: none;
-    color: #919191;
-}
-.main-menu {
-    min-width: 150px;
-}
-.menu .sub-menu {
-	display: none;
-    position: absolute;
-    z-index: 1;
-    
-}
-
-.main-menu>li span {
-    display: inline-block;
-    position: relative;
-    padding-left: 49px;
-	font-size: 17px;
-    color: #919191;
-    background: url(images/menu.png) no-repeat 0px 2px;
-    cursor: pointer;
-}
-
-.main-menu>li:hover .sub-menu {
-	display: block;
-}
-.sub-menu li {
-	background: #F4F4F4;
-    
-    border: 1px solid #848683;
-    margin-bottom: -1px;
-}
-.sub-menu li a:hover {
-    background: #4a74a6;
-    color: #fff;
-}
-.sub-menu li a{
-    display: inline-block;
-    width: 150px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #919191;
-}
-/*               Конец меню               */
 .info a {
     text-decoration: none;
 }
-.info .info-box {
+.info-box {
     display: block;	
     height: 100%;
     width: 90%;
     border-bottom: 1px solid #F4F4F4;
     overflow: hidden;
 } 
-.info .info-box1 {
+.info-box1 {
     display: block;	
     overflow: hidden;
     padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Roboto light";
+}
+.info-box1 a{
+    white-space: nowrap;
+    box-sizing: border-box;
+    min-width: 178px;
 }
 .info-select-box {
     display: block;
     position: relative;
     width: 160px;
     overflow: hidden; 
-    font-family: "Times New Roman";
+    font-family: "Roboto light";
     color: #919191;
     float: left;
 }
 .info-select-box option {
-    font-family: "Times New Roman";
+    font-family: "Roboto light";
     color: #919191;   
 }
 .info-select-box .select-cursor {
-    top: -3px;
+    position: absolute;
+    top: -6px;
     right: 135px;
     font-size: 23px;
 }
+.select-cursor {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 18px;
+    font-size: 35px;
+    pointer-events: none;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 .select-info-box {
-    font-size: 17px;
+    font-size: 16px;
     width: 111%;
     padding-left: 28px;
     background: #FBFBFB;
     border: none;
     cursor: pointer;
     outline: none;
+    color: #4A4A4A;
 }
 .info-box1 .personal-account {
     display: inline-block;
-    min-width: 140px;
-    margin-left: 20%;
-    
+    min-width: 140px;   
 }
 .personal-account a {
-    font-size: 17px;
-    color: #919191;
+    font-size: 16px;
+    color: #4A4A4A;
     padding-left: 20px;
-    background: url("images/personal-account.png") no-repeat 0px 4px;
+    background: url(../images/personal-account.png) no-repeat 0px 4px;
 }
+.add-company a {
+    font-size: 16px;
+    color: #4A4A4A;
+    padding-left: 23px;
+    background: url(../images/add-company.png) no-repeat 0px 2px;
+}
+
 .slogan {
     float: left;
 	width: 100%;
@@ -168,7 +154,7 @@ header{
     margin-right: auto;
 } 
 .slogan-box h1{
-    font-size: 58px;
+    font-size: 70px;
     text-align: center;
     padding-top: 34px;
 }
@@ -180,23 +166,20 @@ header{
     max-width: 840px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 18px;
-    color: #919191;
+    font-size: 17px;
+    color: #909090;
     padding: 10px 15px;
     text-align: center;
+    font-family: "Roboto light";
 }
-/*            Конец шапки сайта           */
-
-/*                                    Начало блока main                                */
-
-/*           Кнопки выбора                 */
+/*   //////////////////////////      кнопки выбора        //////////////////////      */
 
 .select {    
 	width: 100%;    
     background: #848683;
     text-align: center;
     padding-top: 58px;
-    padding-bottom: 58px;
+    padding-bottom: 38px;
     letter-spacing: 30px;
     margin-bottom: -163px;
     position: relative;
@@ -213,7 +196,8 @@ header{
     background: #DE1E29;
     width: 260px;
     overflow: hidden;
-    border-radius: 6px;  
+    border-radius: 6px; 
+    margin-bottom: 20px;
 }
 .select-box select option {
     padding-left: 10px;
@@ -223,13 +207,14 @@ header{
 	 box-shadow: 1px 1px 0px 1px #812c30;
     -webkit-box-shadow: 1px 1px 0px 1px #812c30;
     -moz-box-shadow: 1px 1px 0px 1px #812c30;
-    
+    -ms-box-shadow: 1px 1px 0px 1px #812c30;
+    -o-box-shadow: 1px 1px 0px 1px #812c30;   
 }
 .select-cursor {
 	display: block;
     position: absolute;
     right: 5px;
-    top: 18px;
+    top: 12px;
     font-size: 35px;
     pointer-events: none;
     -webkit-transform: rotate(90deg); // разворот элемента для разных бразуеров
@@ -286,19 +271,14 @@ background: linear-gradient(to bottom,  rgba(222,30,41,1) 0%,rgba(222,30,41,1) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', endColorstr='#f7de1e29',GradientType=0 ); /* IE6-9 */
 }
 
-/*            Конец кнопок выбора            */
-
-/*            Значения иконок                */
+/*    ///////////////////////        Значения иконок       ///////////////         */
 
 .marker {
-	height: 204px;
+	min-height: 204px;
     background: #FBFBFB;
 }
 .marker-box1 {
 	height: 100%;
-    width: 70%;
-    float: left;
-    overflow: hidden;
 }
 .marker-box1  ul{
     display: block;
@@ -306,6 +286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     max-width: 700px;
     list-style: none;
     padding-top: 60px;
+    padding-left: 30px;
 }
 .marker-box1  ul li {
     display: inline-block;
@@ -346,9 +327,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 .marker-box2 div p{
     padding-left: 70px;
 }
-/*            Конец значений иконок           */
+/*     ///////////////////////       Конец значений иконок      //////////////////     */
 
-/*            Инструкция для пользователя     */
+/*      //////////////////////      Инструкция для пользователя  //////////////////   */
 
 .instruction {
 	width: 100%;
@@ -399,9 +380,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 17px;
 }
 
-/*           Конец Инструкция для пользователя        */
+/*     //////////////////      Конец Инструкция для пользователя   //////////////     */
 
-/*           Предоставляемые услуги                   */
+/*      /////////////////     Предоставляемые услуги         ///////////////////       */
 
 .servises {
 	width: 100%;
@@ -426,21 +407,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     padding-top: 20px;
     color: #828282;
 }
-.servises-box2,.servises-box3 {
-	display: inline-block;
-    width: 50%;
-    min-width: 500px;
-    margin-right: -4px;
+.servises-box2,.servises-box3 {    
     padding-bottom: 70px;
     min-height: 400px;   
     overflow: hidden;
 }
 .servises-content {
-    max-width: 440px;
-    min-width: 437px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    max-width: 675px;
 }
 .servises-content img {
     display: block;
@@ -458,17 +433,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .servises-content p {
     color: #A7A7A7;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
     font-weight: 400;
     font-style: italic;
+    padding-left: 40px;
+    padding-top: 10px;
+    background: url(../images/for-avtovladel.jpg) no-repeat 0px 1px;
 }
-.servises-box2 .servises-content {
-	 margin-left: 25%;
-} 
-/*               Конец предоставляемых услуг            */
 
-/*               Сейчас ищут                            */
+/*       ////////////////////        Конец предоставляемых услуг      ////////////      */
+
+/*       //////////////////        Сейчас ищут             ////////////////               */
 .now-search {
 	background: #F4F4F4;
 }
@@ -543,9 +519,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     border: 1px solid #de1e29;
     border-radius: 6px;
     color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 21px;
     outline: none;
+    font-family: eurofurence;
+    font-weight: 700;
 }
 .now-search-button1:hover {
     box-shadow: 1px 1px 0px 1px #812c30;
@@ -568,37 +545,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     color: #4A74A6;
     font-size: 20px;
     cursor: pointer;
-    
+    outline: none;
 }
-/*               Конец Сейчас ишут                       */
-/*                                   Footer - Подвал                                */
+/*        //////////////////////       Конец Сейчас ишут         /////////////              */
+
+
+/*        ///////////////////////     Footer - Подвал      ///////////////////////     */
 
 footer {
-    height: 394px;
+    min-height: 394px;
     width: 100%;
     background: #353535;
 }
 .footer {
 	width: 100%;
-    height: 343px;
+    min-height: 343px;
 }
 .footer h6 {
 	color: #fff;
 }
 .footer-box1{
-    width: 55%;
     height: 100%;
     padding-left: 200px;
-    float: left;
 }
 .footer-box1 h6{
     margin-top: 50px;
     margin-bottom: 15px;
 }
-.footer-content {
-	display: inline-block;
+.footer-box1 .footer-content{ 
     vertical-align: top;
-    width: 30%;
+    min-width: 200px;
 }
 
 .footer-content ul {
@@ -617,15 +593,13 @@ footer {
 .footer-content ul a {
 	color: #D4D4D4;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
 }
 .footer-content ul a:hover{
     text-decoration: underline;
 }
 .footer-box2{
-    width: 30%;
-    height: 100%;   
-    float: right;      
+    height: 100%;     
 }
 .footer-box2 h6:first-child{
     margin-left: 40px;
@@ -675,3 +649,4 @@ footer {
     padding-top: 15px;
     vertical-align: bottom;
 }
+

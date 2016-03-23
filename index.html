@@ -1,89 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-    <title>Главная</title>
     <meta charset="UTF-8">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="style.css"   >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BibiHelper</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-skin.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <header class="clearfix">
-        <div class="header logo">
-            <div class="logo-box">
-                <a href=""><img src="images/logo.jpg" alt="lotogip"></a>
+   
+    <div class="container-fluid">
+        <header class="header container">
+           <div class="logotype clearfix">
+                <div class="col-md-6 col-sm-12 logo">
+                    <a href=""><img src="images/logo.jpg" alt="lotogip"></a>
+                </div>
+                <div class="col-md-6 col-sm-12 logo-2">
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
+                        <div class="add-company">
+                                <a href="">Добавить компанию</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
+                        <div class="info-select-box">
+                            <select name="" id="" class="select-info-box">
+                                <option value="">Выберите город</option>
+                                <option value="">Новосибирск</option>
+                                <option value="">Красноярск</option>
+                                <option value="">Самара</option>
+                                <option value="">Волгоград</option>
+                            </select>
+                            <span class="select-cursor">&#8250;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
+                        <div class="personal-account">
+                                <a href="">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+                                    
             </div>
-        </div>
-        <div class="header info cleafix">
-          <div class="info-box">          
-           <nav class="menu">
-               <ul class="main-menu">
-                  <li><span>Меню</span>
-                      <ul class="sub-menu">
-                           <li><a href="#">Страница 1</a></li>
-                           <li><a href="#">Страница 2</a></li>
-                           <li><a href="#">Страница 3</a></li>
-                           <li><a href="#">Страница 4</a></li>
-                           <li><a href="#">Страница 5</a></li>
-                       </ul>
-                   </li>
-               </ul>
-           </nav>
-           <div class="info-box1">
-               <div class="info-select-box">
-                    <select name="" id="" class="select-info-box">
-                        <option value="">Выберите город</option>
-                        <option value="">Новосибирск</option>
-                        <option value="">Красноярск</option>
-                        <option value="">Самара</option>
-                        <option value="">Волгоград</option>
+            <section class="header slogan">
+                <div class="slogan-box">
+                    <h1>Ищите автосервис? Мы <span>поможем</span>!</h1>
+                </div>
+                <div class="slogan-box">
+                    <p>Bibihelper - информационная система для решения всего спектра задач, связанных со срочным и плановым обслуживанием автомобиля</p>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <div class="select">
+                <div class="select-box">                
+                    <select class="select-avto">
+                       <option value="">Марка автомобиля</option>
+                       <option value="">Audi</option>
+                       <option value="">Mersedes</option>
+                       <option value="">BMW</option>
+                       <option value="">Opel</option>
                     </select>
                     <span class="select-cursor">&#8250;</span>
                 </div>
-                <div class="personal-account">
-                    <a href="">Личный кабинет</a>
+                <div class="select-box">
+                    <select class="select-work">
+                        <option value="">Вид работ</option>
+                        <option value="">Рихтовка</option>
+                        <option value="">Балансировка</option>
+                        <option value="">Электрика</option>
+                        <option value="">Покраска</option>
+                    </select>
+                    <span class="select-cursor">&#8250;</span>
+                </div>
+                <div class="select-box">
+                    <input class="select-button" type="button" value="Подобрать">
                 </div>
             </div>
-          </div>
-        </div>
-        <section class="header slogan">
-            <div class="slogan-box">
-                <h1>Сломалось авто? Мы <span>поможем</span>!</h1>
-            </div>
-            <div class="slogan-box">
-                <p>Bibihelper - информационная система для решения всего спектра задач, связанных со срочным и плановым обслуживанием автомобиля</p>
-            </div>
-        </section>
-        
-    </header>
-    <main>
-        <div class="select">
-            <div class="select-box">                
-                <select class="select-avto">
-                   <option value="">Марка автомобиля</option>
-                   <option value="">Audi</option>
-                   <option value="">Mersedes</option>
-                   <option value="">BMW</option>
-                   <option value="">Opel</option>
-                </select>
-                <span class="select-cursor">&#8250;</span>
-            </div>
-            <div class="select-box">
-                <select class="select-work">
-                    <option value="">Вид работ</option>
-                    <option value="">Рихтовка</option>
-                    <option value="">Балансировка</option>
-                    <option value="">Электрика</option>
-                    <option value="">Покраска</option>
-                </select>
-                <span class="select-cursor">&#8250;</span>
-            </div>
-            <div class="select-box">
-                <input class="select-button" type="button" value="Подобрать">
-            </div>
-        </div>
-        <div class="map">
-            <div id="map" style="width: 100%; height: 600px"></div>
+            
+<!--            //////////////////-->
+      
+       <div id="map" style="width: 100%; height: 600px"></div>
                 <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 
                 <script type="text/javascript">
@@ -148,9 +154,8 @@
                         myMap.geoObjects.add(clusterer);
                     }
                 </script>
-                    
-            <div class="marker">
-                <div class="marker-box1 clearfix">
+                <div class="marker clearfix">
+                <div class="marker-box1 col-md-8">
                     <ul>
                         <li>
                             <img src="images/n-avtoservis.jpg" alt="">
@@ -178,15 +183,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="marker-box2 clearfix">
+                <div class="marker-box2 col-md-4">
                     <div>
                         <img src="images/neskolko-tochek.jpg" alt="">
                         <p>Несколько точек обслуживания рядом</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="instruction">
+            <section class="instruction">
             <div class="instruction-box1">
                 <h2>Как это <span>работает</span>?</h2>
                 <p>3 простых шага для поиска необходимой услуги в BiBiHelper</p>
@@ -195,52 +199,39 @@
                 <div class="instruction-note">
                    <div class="istruction-content">
                         <span>1</span>
-                        <p>Автовладелец вводит информацию об автомобиле и описание необходимых работ.</p>
+                        <p>Введите марку своего автомобиля и вид работ.</p>
                     </div>
                 </div>
                 <div class="instruction-note">
                    <div class="istruction-content">
                         <span>2</span>
-                        <p>Система предлагает автосервисы с учётом их геграфического расположения, рейтинга, цен и сроков.</p>
+                        <p>Выберете из предложенных вариантов ближайший автосервис.</p>
                     </div>
                 </div>
                 <div class="instruction-note">
                    <div class="istruction-content">
                         <span>3</span>
-                        <p>В карточке автосервиса можно получить более детальную информацию  и записаться на ремонт в удобное время.</p>
+                        <p>Запишитесь на приём в удобное для вас время.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="servises">
+        <section class="servises clearfix">
             <div class="servises-box1">
-                <h2>Какие <span>услуги</span> предоставляет BiBiHelper?</h2>
-                <p>BiBiHelper - сервис не только для автомобилистов.</p>            
+                <h2>В чём <span>преимущества</span> BiBiHelper?</h2>
+                <p>Удобный, Быстрый, Простой</p>            
             </div>
             <div class="servises-box2"> 
                 <div class="servises-content">             
-                    <img src="images/for-avtovladel.jpg" alt="Для автовладельцев">
-                    <h3>Для автовладельцев</h3>
-                    <div class="clearfix"></div>
-                    <p>Выбор лучшего автотехцентра рядом с домом с учётом его рейтинга и запись на ремонт в удобное время</p>
-                    <p>Отправка ОН-лайн запроса для уточнения цен, сроков и консультация эксперта</p>
-                    <p>Мониторинг акций и скидок в автотехцентрах</p>
-                    <p>Отправка отзыва о работе автотехцентра или конкретного мастера</p>
-                    <p>Поиск автозапчастей из наличия а автотехцентрах города</p>
-                    <p>Просмотр вакансий в автотехцентрах для соискателей</p> 
+                    
+                    <p>Удобный поиск среди сотен компаний в рамках одного сайта</p>
+                    <p>Обслуживание своего автомобиля во всех компаниях через единый личный кабинет</p>
+                    <p>Хранение истории ремонта и ранее просмотренных предложений</p>
+                    <p>Сравнение цен на услуги поремонту автомобиля</p>
+                    <p>Онлайн запись в автосервис и получение консультации от экспертов</p>
+                    <p>уведомление об акциях и скидках от компаний-партнёров</p> 
                 </div>              
-            </div>
-            <div class="servises-box3"> 
-               <div class="servises-content">              
-                    <img src="images/for-company.jpg" alt="Для компаний">
-                    <h3>Для компаний</h3>
-                    <div class="clearfix"></div>
-                    <p>Привлечение новых клиентов и удержание текущих</p>
-                    <p>Продажа складских остатков автозапчастей</p>
-                    <p>Подбор квалифицированных сотрудников</p>
-                    <p>Качественная реклама своего автотехцентра, информация о проводимых акция </p>
-                </div>     
-            </div>                    
+            </div>                   
         </section>
         <section class="now-search">
             <h2>Сейчас <span>ищут</span></h2>
@@ -253,19 +244,18 @@
                 <li><span class="now-search-left">Citroen C4</span> <span class="now-search-right">&#8250; Аэрография</span></li>
             </ul>
             <div class="now-search-button">
-                <input type="button" class="now-search-button1" value="Подобрать">
+                <input type="button" class="now-search-button1" value="Найти автосервис">
                 <span>или</span>
                 <input type="button" class="now-search-button2" value="Расширенный поиск">
             </div>
         </section>        
-    </main>
-    
-<!--                                Footer - Подвал                            -->
+        </main>
+        <!--                                Footer - Подвал                            -->
    
     <footer>
-       <section class="footer">
-           <div class="footer-box1">
-               <div class="footer-content">
+       <section class="footer clearfix">
+           <div class="col-md-8 footer-box1 clearfix">
+               <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
                    <h6>О проекте</h6>
                    <ul>
                        <li><a href="">Как это работает</a></li>
@@ -276,7 +266,7 @@
                        <li><a href="">Конфидициальность</a></li>
                    </ul>
                </div>
-               <div class="footer-content">
+               <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
                    <h6>Автовладельцам</h6>
                    <ul>
                        <li><a href="">Поиск</a></li>
@@ -289,7 +279,7 @@
                        <li><a href="">Перечень услуг</a></li>
                    </ul>
                </div>
-               <div class="footer-content">
+               <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
                    <h6>Компаниям</h6>
                    <ul>
                        <li><a href="">Добавть компанию</a></li>
@@ -301,7 +291,7 @@
                    </ul>
                </div>            
            </div>
-           <div class="footer-box2">
+           <div class="footer-box2 col-md-4">
                <h6>Мы в социальных сетях</h6>
                <ul>
                    <li><a href="https://vk.com/" target="_blank"><img src="images/vkontakte.jpg" alt="Вконтакте"></a></li>
@@ -320,5 +310,11 @@
            <p>&copy; 2015-2016 BiBiHelper - информационная автомобильная система</p>
         </div>
     </footer> 
+    </div>
+    
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/function.js"></script>
 </body>
 </html>
