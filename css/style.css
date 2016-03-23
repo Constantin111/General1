@@ -1,37 +1,37 @@
 @font-fase {
     font-family: eurofurence; /* Имя шрифта */
-    src: url(fonts/eurofurence.ttf), /* Путь к файлу со шрифтом */
-    src: url(fonts/eurofurence.eot),
-    src: url(fonts/eurofurence.woff),
-    src: url(fonts/eurofurence.woff2);
+    src: url(../fonts/eurofurence.ttf), /* Путь к файлу со шрифтом */
+    src: url(../fonts/eurofurence.eot),
+    src: url(../fonts/eurofurence.woff),
+    src: url(../fonts/eurofurence.woff2);
 }
 @font-fase {
     font-family: eurofurence; /* Имя шрифта */
-    src: url(fonts/eurofurence-bold-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(fonts/eurofurence-bold-webfont.eot),
-    src: url(fonts/eurofurence-bold-webfont.woff),
-    src: url(fonts/eurofurence-bold-webfont.woff2);
+    src: url(../fonts/eurofurence-bold-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(../fonts/eurofurence-bold-webfont.eot),
+    src: url(../fonts/eurofurence-bold-webfont.woff),
+    src: url(../fonts/eurofurence-bold-webfont.woff2);
 }
 @font-fase {
     font-family: eurofurence; /* Имя шрифта */
-    src: url(fonts/roboto-light-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(fonts/roboto-light-webfont.eot),
-    src: url(fonts/roboto-light-webfont.woff),
-    src: url(fonts/roboto-light-webfont.woff2);
+    src: url(../fonts/roboto-light-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(../fonts/roboto-light-webfont.eot),
+    src: url(../fonts/roboto-light-webfont.woff),
+    src: url(../fonts/roboto-light-webfont.woff2);
 }
 @font-fase {
     font-family: eurofurence; /* Имя шрифта */
-    src: url(fonts/roboto-medium-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(fonts/roboto-medium-webfont.eot),
-    src: url(fonts/roboto-medium-webfont.woff),
-    src: url(fonts/roboto-medium-webfont.woff2);
+    src: url(../fonts/roboto-medium-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(../fonts/roboto-medium-webfont.eot),
+    src: url(../fonts/roboto-medium-webfont.woff),
+    src: url(../fonts/roboto-medium-webfont.woff2);
 }
 @font-fase {
     font-family: eurofurence; /* Имя шрифта */
-    src: url(fonts/roboto-thin-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(fonts/roboto-thin-webfont.eot),
-    src: url(fonts/roboto-thin-webfont.woff),
-    src: url(fonts/roboto-thin-webfont.woff2);
+    src: url(../fonts/roboto-thin-webfont.ttf), /* Путь к файлу со шрифтом */
+    src: url(../fonts/roboto-thin-webfont.eot),
+    src: url(../fonts/roboto-thin-webfont.woff),
+    src: url(../fonts/roboto-thin-webfont.woff2);
 }
 /*  //////////////////////         ///////////////////////////     */
 
@@ -166,7 +166,7 @@ h2 {
     max-width: 840px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 17px;
+    font-size: 18px;
     color: #909090;
     padding: 10px 15px;
     text-align: center;
