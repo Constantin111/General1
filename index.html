@@ -62,34 +62,104 @@
         </header>
         <main class="main">
             <div class="select">
-                <div class="select-box">                
-                    <select class="select-avto">
-                       <option value="">Марка автомобиля</option>
-                       <option value="">Audi</option>
-                       <option value="">Mersedes</option>
-                       <option value="">BMW</option>
-                       <option value="">Opel</option>
-                    </select>
-                    <span class="select-cursor">&#8250;</span>
+                <div class="select-box">
+                    <div class="select-box1">              
+                        <select class="select-avto">
+                           <option value="">Марка автомобиля</option>
+                           <option value="">Audi</option>
+                           <option value="">Mersedes</option>
+                           <option value="">BMW</option>
+                           <option value="">Opel</option>
+                        </select>
+                        <span class="select-cursor">&#8250;</span>
+                    </div> 
                 </div>
                 <div class="select-box">
-                    <select class="select-work">
-                        <option value="">Вид работ</option>
-                        <option value="">Рихтовка</option>
-                        <option value="">Балансировка</option>
-                        <option value="">Электрика</option>
-                        <option value="">Покраска</option>
-                    </select>
-                    <span class="select-cursor">&#8250;</span>
+                   <div class="select-box1">
+                        <select class="select-work">
+                            <option value="">Вид работ</option>
+                            <option value="">Рихтовка</option>
+                            <option value="">Балансировка</option>
+                            <option value="">Электрика</option>
+                            <option value="">Покраска</option>
+                        </select>
+                        <span class="select-cursor">&#8250;</span>
+                    </div>
                 </div>
                 <div class="select-box">
-                    <input class="select-button" type="button" value="Подобрать">
+                    <input class="select-button" type="button" value="Найти">
+                    <a href="#">Расширенный поиск</a>
                 </div>
             </div>
             
 <!--            //////////////////-->
       
-<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7qlxClQPIIcPNHtpDSM03glyy7QTIx2r&width=100%&height=600&lang=ru_RU&sourceType=constructor"></script>
+              <div id="map" style="width: 100%; height: 600px"></div>
+                <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+                <script type="text/javascript">
+
+                ymaps.ready(init);
+
+                function init () {
+
+                var myMap = new ymaps.Map("map", {
+                                center: [56.107344058237146,93.08926175900916],
+                                zoom: 10
+                            }); 
+
+
+                var myGeoObjects = [];
+
+                        myGeoObjects[0] = new ymaps.Placemark([56.045075776018436,92.9023474999999],{
+                                 clusterCaption: 'Заголовок', 
+                                        balloonContentBody: '"НОКДАУН" СК «Монолит» ул. Алексеева 93',
+                                                },{
+                                                // Необходимо указать данный тип макета.
+                                                iconLayout: 'default#image',
+                                                iconImageHref: '../wp-content/themes/yoo_eat_wp/images/logo_new_map.png',
+                                                // Размеры метки.
+                                                iconImageSize: [35, 50], 
+                                                iconImageOffset: [-20, -20]
+                                                });
+
+                                var clusterIcons=[{
+                        href:'http://gmaps-utility-library.googlecode.com/svn/trunk/markerclusterer/images/m1.png',
+                        size:[53,52],
+                        offset:[0,0]
+                }];
+        
+                   var clusterer = new ymaps.Clusterer({
+                        clusterDisableClickZoom: true,
+                        clusterOpenBalloonOnClick: true,
+                        groupByCoordinates: true,
+                        // Устанавливаем стандартный макет балуна кластера "Карусель".
+                        clusterBalloonContentLayout: 'cluster#balloonCarousel',
+                        // Устанавливаем собственный макет.
+                           //clusterBalloonItemContentLayout: customItemContentLayout,
+                        // Устанавливаем режим открытия балуна. 
+                        // В данном примере балун никогда не будет открываться в режиме панели.
+                        clusterBalloonPanelMaxMapArea: 0,
+                        // Устанавливаем размеры макета контента балуна (в пикселях).
+                        clusterBalloonContentLayoutWidth: 300,
+                        clusterBalloonContentLayoutHeight: 200,
+                        // Устанавливаем максимальное количество элементов в нижней панели на одной странице
+                        clusterBalloonPagerSize: 15
+                        // Настройка внешего вида нижней панели.
+                        // Режим marker рекомендуется использовать с небольшим количеством элементов.
+                        // clusterBalloonPagerType: 'marker',
+                        // Можно отключить зацикливание списка при навигации при помощи боковых стрелок.
+                         //clusterBalloonCycling: false,
+                        // Можно отключить отображение меню навигации.
+                        // clusterBalloonPagerVisible: false
+                    });
+
+        
+                        clusterer.add(myGeoObjects);
+                        myMap.geoObjects.add(clusterer);
+                    }
+                </script>
+                
                 <div class="marker clearfix">
                 <div class="marker-box1 col-md-8">
                     <ul>
@@ -131,23 +201,26 @@
                 <h2>Как это <span>работает</span>?</h2>
                 <p>3 простых шага для поиска необходимой услуги в BiBiHelper</p>
             </div>
-            <div class="instruction-box2">
-                <div class="instruction-note">
+            <div class="instruction-box2 clearfix">
+                <div class="instruction-note col-md-4">
                    <div class="istruction-content">
                         <span>1</span>
                         <p>Введите марку своего автомобиля и вид работ.</p>
+                        <img src="images/smile-klav.png" alt="Смайл с клавиатурой">
                     </div>
                 </div>
-                <div class="instruction-note">
+                <div class="instruction-note col-md-4">
                    <div class="istruction-content">
                         <span>2</span>
                         <p>Выберете из предложенных вариантов ближайший автосервис.</p>
+                        <img src="images/select-plase.png" alt="выбор автосервиса">
                     </div>
                 </div>
-                <div class="instruction-note">
+                <div class="instruction-note col-md-4">
                    <div class="istruction-content">
                         <span>3</span>
                         <p>Запишитесь на приём в удобное для вас время.</p>
+                        <img src="images/phone-servises.png" alt="зпись">
                     </div>
                 </div>
             </div>
