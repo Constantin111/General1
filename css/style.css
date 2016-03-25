@@ -139,7 +139,7 @@ h2 {
     transform: rotate(90deg);
 }
 .select-info-box {
-    font-size: 16px;
+    font-size: 15px;
     width: 111%;
     padding-left: 28px;
     background: #FBFBFB;
@@ -153,13 +153,13 @@ h2 {
     min-width: 140px;   
 }
 .personal-account a {
-    font-size: 16px;
+    font-size: 15px;
     color: #4A4A4A;
     padding-left: 20px;
     background: url(../images/personal-account.png) no-repeat 0px 4px;
 }
 .add-company a {
-    font-size: 16px;
+    font-size: 15px;
     color: #4A4A4A;
     padding-left: 23px;
     background: url(../images/add-company.png) no-repeat 0px 2px;
