@@ -413,7 +413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 17px;
     min-height: 72px;
     margin-bottom: 46px;
-    font-family: "Roboto Light", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #494949;
 }
 
@@ -474,7 +474,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 16px;
     margin-bottom: 20px;
     font-style: italic;
-    font-family: "Roboto Light", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-left: 40px;
     padding-top: 10px;
     background: url(../images/for-avtovladel.jpg) no-repeat 0px 1px;
