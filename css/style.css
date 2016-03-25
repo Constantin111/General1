@@ -12,41 +12,60 @@
     src: url(../fonts/eurofurence-bold-webfont.woff),
     src: url(../fonts/eurofurence-bold-webfont.woff2);
 }
-@font-fase {
-    font-family: eurofurence; /* Имя шрифта */
-    src: url(../fonts/roboto-light-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(../fonts/roboto-light-webfont.eot),
-    src: url(../fonts/roboto-light-webfont.woff),
-    src: url(../fonts/roboto-light-webfont.woff2);
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-@font-fase {
-    font-family: eurofurence; /* Имя шрифта */
-    src: url(../fonts/roboto-medium-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(../fonts/roboto-medium-webfont.eot),
-    src: url(../fonts/roboto-medium-webfont.woff),
-    src: url(../fonts/roboto-medium-webfont.woff2);
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-@font-fase {
-    font-family: eurofurence; /* Имя шрифта */
-    src: url(../fonts/roboto-thin-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(../fonts/roboto-thin-webfont.eot),
-    src: url(../fonts/roboto-thin-webfont.woff),
-    src: url(../fonts/roboto-thin-webfont.woff2);
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/roboto-thin-webfont.eot');
+    src: url('../fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-thin-webfont.woff') format('woff'),
+         url('../fonts/roboto-thin-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 /*  //////////////////////         ///////////////////////////     */
 
 body {
     background: #FBFBFB;
-    font-family: "Roboto light", sans-serif;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 h1 {
     font-weight: 500;
     margin: 0;
-    font-family: eurofurence;
+    font-family: "eurofurence", sans-serif;
 }
 h6{
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
 }
 h2 {
     font-weight: 500;
@@ -78,7 +97,8 @@ h2 {
     padding-top: 60px;
     padding-left: 0;
     padding-right: 0;
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
 }
 .info-box1 a{
     white-space: nowrap;
@@ -90,12 +110,14 @@ h2 {
     position: relative;
     width: 160px;
     overflow: hidden; 
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
     color: #919191;
     float: left;
 }
 .info-select-box option {
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
     color: #919191;   
 }
 .info-select-box .select-cursor {
@@ -171,7 +193,8 @@ h2 {
     color: #909090;
     padding: 10px 15px;
     text-align: center;
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
 }
 /*   //////////////////////////      кнопки выбора        //////////////////////      */
 
@@ -199,8 +222,12 @@ h2 {
     width: 260px;
 }
 .select-box .select-box1 {
+    display: block;
+    overflow: hidden;
 	height: 44px;
     -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
     border-radius: 6px;
 }
 .select-box a{
@@ -240,18 +267,20 @@ h2 {
     padding-left: 20px;
     background: #fbfbfb;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 300;
     cursor: pointer;
     border-radius: 7px;
+    letter-spacing: normal;
 }
 .select-work {
     width: 107%;
     height: 100%;
     padding-left: 20px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 300;
     cursor: pointer;
     border-radius: 7px;
+    letter-spacing: normal;
 }
 .select-button {
     display: block;
@@ -261,7 +290,7 @@ h2 {
     border: 1px solid #de1e29;
     color: #fff;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     outline: none;
     border-radius: 6px;
@@ -373,7 +402,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 100px; 
     line-height: 88px;
     margin-right: 10px;
-    font-family: "Roboto thin", sans-serif;
+    font-family: "Roboto",sans-serif;
+    font-weight: 100;
 }
 .instruction-note p {
 	display: block;
@@ -383,7 +413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 17px;
     min-height: 72px;
     margin-bottom: 46px;
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto Light", sans-serif;
     color: #494949;
 }
 
@@ -443,9 +473,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     color: #5D5D5D;
     font-size: 16px;
     margin-bottom: 20px;
-    font-weight: 600;
     font-style: italic;
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto Light", sans-serif;
     padding-left: 40px;
     padding-top: 10px;
     background: url(../images/for-avtovladel.jpg) no-repeat 0px 1px;
