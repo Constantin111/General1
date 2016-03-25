@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap-skin.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <!--[if IE]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -92,131 +93,50 @@
                 </div>
             </div>
             
-<!--            //////////////////-->
+<!--            ////////////////////////////////////////////////////////            -->
       
-              <div id="map" style="width: 100%; height: 600px"></div>
-                <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+              <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Y4WI9jh6Fj7dr-r6SxZEm540pI18QlK6&width=100%&height=600&lang=ru_RU&sourceType=constructor"></script>
 
-                <script type="text/javascript">
-
-                ymaps.ready(init);
-
-                function init () {
-
-                var myMap = new ymaps.Map("map", {
-                                center: [56.107344058237146,93.08926175900916],
-                                zoom: 10
-                            }); 
-
-
-                var myGeoObjects = [];
-
-                        myGeoObjects[0] = new ymaps.Placemark([56.045075776018436,92.9023474999999],{
-                                 clusterCaption: 'Заголовок', 
-                                        balloonContentBody: '"НОКДАУН" СК «Монолит» ул. Алексеева 93',
-                                                },{
-                                                // Необходимо указать данный тип макета.
-                                                iconLayout: 'default#image',
-                                                iconImageHref: '../wp-content/themes/yoo_eat_wp/images/logo_new_map.png',
-                                                // Размеры метки.
-                                                iconImageSize: [35, 50], 
-                                                iconImageOffset: [-20, -20]
-                                                });
-
-                                var clusterIcons=[{
-                        href:'http://gmaps-utility-library.googlecode.com/svn/trunk/markerclusterer/images/m1.png',
-                        size:[53,52],
-                        offset:[0,0]
-                }];
-        
-                   var clusterer = new ymaps.Clusterer({
-                        clusterDisableClickZoom: true,
-                        clusterOpenBalloonOnClick: true,
-                        groupByCoordinates: true,
-                        // Устанавливаем стандартный макет балуна кластера "Карусель".
-                        clusterBalloonContentLayout: 'cluster#balloonCarousel',
-                        // Устанавливаем собственный макет.
-                           //clusterBalloonItemContentLayout: customItemContentLayout,
-                        // Устанавливаем режим открытия балуна. 
-                        // В данном примере балун никогда не будет открываться в режиме панели.
-                        clusterBalloonPanelMaxMapArea: 0,
-                        // Устанавливаем размеры макета контента балуна (в пикселях).
-                        clusterBalloonContentLayoutWidth: 300,
-                        clusterBalloonContentLayoutHeight: 200,
-                        // Устанавливаем максимальное количество элементов в нижней панели на одной странице
-                        clusterBalloonPagerSize: 15
-                        // Настройка внешего вида нижней панели.
-                        // Режим marker рекомендуется использовать с небольшим количеством элементов.
-                        // clusterBalloonPagerType: 'marker',
-                        // Можно отключить зацикливание списка при навигации при помощи боковых стрелок.
-                         //clusterBalloonCycling: false,
-                        // Можно отключить отображение меню навигации.
-                        // clusterBalloonPagerVisible: false
-                    });
-
-        
-                        clusterer.add(myGeoObjects);
-                        myMap.geoObjects.add(clusterer);
-                    }
-                </script>
-                
-                <div class="marker clearfix">
-                <div class="marker-box1 col-md-8">
-                    <ul>
-                        <li>
-                            <img src="images/n-avtoservis.jpg" alt="">
-                            <p>Неофициальный автосервис</p>
-                        </li>
-                        <li>
-                            <img src="images/shinimontaj.jpg" alt="">
-                            <p>Шиномонтаж</p>
-                        </li>
-                        <li>
-                            <img src="images/tuning-atelie.jpg" alt="">
-                            <p>Тюнинг-ателье</p>
-                        </li>
-                        <li>
+<!--                  //////////////////////////////////////////////////////                -->
+                <div class="marker">
+                <div class="marker-box1 clearfix">
+                    <ul class="clearfix">
+                       <li class="col-md-4 col-sm-6">
                             <img src="images/o-avtoservis.jpg" alt="">
                             <p>Официальный автосервис</p>
                         </li>
-                        <li>
-                            <img src="images/avtomoika.jpg" alt="">
-                            <p>Автомойки</p>
+                        <li class="col-md-4 col-sm-6">
+                            <img src="images/n-avtoservis.jpg" alt="">
+                            <p>Неофициальный автосервис</p>
                         </li>
-                        <li>
-                            <img src="images/azs.jpg" alt="">
-                            <p>АЗС</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="marker-box2 col-md-4">
-                    <div>
-                        <img src="images/neskolko-tochek.jpg" alt="">
+                        <li class="col-md-4 col-sm-12">
+                            <img src="images/neskolko-tochek.jpg" alt="">
                         <p>Несколько точек обслуживания рядом</p>
-                    </div>
+                        </li>                       
+                    </ul>
                 </div>
             </div>
             <section class="instruction">
             <div class="instruction-box1">
                 <h2>Как это <span>работает</span>?</h2>
-                <p>3 простых шага для поиска необходимой услуги в BiBiHelper</p>
+                <p>3 простых шага для поиска лучшего автосервиса</p>
             </div>
             <div class="instruction-box2 clearfix">
-                <div class="instruction-note col-md-4">
+                <div class="instruction-note col-md-4 col-sm-6">
                    <div class="istruction-content">
                         <span>1</span>
                         <p>Введите марку своего автомобиля и вид работ.</p>
                         <img src="images/smile-klav.png" alt="Смайл с клавиатурой">
                     </div>
                 </div>
-                <div class="instruction-note col-md-4">
+                <div class="instruction-note col-md-4 col-sm-6">
                    <div class="istruction-content">
                         <span>2</span>
                         <p>Выберете из предложенных вариантов ближайший автосервис.</p>
                         <img src="images/select-plase.png" alt="выбор автосервиса">
                     </div>
                 </div>
-                <div class="instruction-note col-md-4">
+                <div class="instruction-note col-md-4 col-sm-12">
                    <div class="istruction-content">
                         <span>3</span>
                         <p>Запишитесь на приём в удобное для вас время.</p>
@@ -236,7 +156,7 @@
                     <p>Удобный поиск среди сотен компаний в рамках одного сайта</p>
                     <p>Обслуживание своего автомобиля во всех компаниях через единый личный кабинет</p>
                     <p>Хранение истории ремонта и ранее просмотренных предложений</p>
-                    <p>Сравнение цен на услуги поремонту автомобиля</p>
+                    <p>Сравнение цен на услуги по ремонту автомобиля</p>
                     <p>Онлайн запись в автосервис и получение консультации от экспертов</p>
                     <p>уведомление об акциях и скидках от компаний-партнёров</p> 
                 </div>              
@@ -268,7 +188,6 @@
                    <h6>О проекте</h6>
                    <ul>
                        <li><a href="">Как это работает</a></li>
-                       <li><a href="">Вопрос/ответ</a></li>
                        <li><a href="">Новости</a></li>
                        <li><a href="">Вакансии</a></li>
                        <li><a href="">Условия использования</a></li>
@@ -281,11 +200,7 @@
                        <li><a href="">Поиск</a></li>
                        <li><a href="">Расширенный поиск</a></li>
                        <li><a href="">Автотехцентры</a></li>
-                       <li><a href="">Шиномонтажи</a></li>
-                       <li><a href="">Автомойки</a></li>
-                       <li><a href="">Тюнинг-ателье</a></li>
-                       <li><a href="">АЗС</a></li>
-                       <li><a href="">Перечень услуг</a></li>
+                       
                    </ul>
                </div>
                <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
@@ -293,7 +208,7 @@
                    <ul>
                        <li><a href="">Добавть компанию</a></li>
                     </ul>
-                    <h6>Личный кабинет</h6>
+                    <h6 class="self-room">Личный кабинет</h6>
                     <ul>  
                        <li><a href="">Вход</a></li>
                        <li><a href="">Регистрация</a></li>
@@ -305,9 +220,7 @@
                <ul>
                    <li><a href="https://vk.com/" target="_blank"><img src="images/vkontakte.jpg" alt="Вконтакте"></a></li>
                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fasebook.jpg" alt="Фэйсбук"></a></li>
-                   <li><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.jpg" alt="Ютуб"></a></li>
                    <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.jpg" alt="Твиттер"></a></li>
-                   <li><a href="https://plus.google.com/" target="_blank"><img src="images/google.jpg" alt="Гугл+"></a></li>
                </ul>
                <a href="" class="qwestion">
                   <img src="images/qwestion.jpg" alt="Вопрос">
