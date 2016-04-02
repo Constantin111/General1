@@ -280,7 +280,7 @@ optgroup {
 button,
 input, /* 1 */
 select { /* 2 */
-  overflow: visible;
+  overflow: hidden;
 }
 
 /**

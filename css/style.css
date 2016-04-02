@@ -1,67 +1,46 @@
-@font-fase {
-    font-family: eurofurence; /* Имя шрифта */
-    src: url(../fonts/eurofurence.ttf), /* Путь к файлу со шрифтом */
-    src: url(../fonts/eurofurence.eot),
-    src: url(../fonts/eurofurence.woff),
-    src: url(../fonts/eurofurence.woff2);
-}
-@font-fase {
-    font-family: eurofurence; /* Имя шрифта */
-    src: url(../fonts/eurofurence-bold-webfont.ttf), /* Путь к файлу со шрифтом */
-    src: url(../fonts/eurofurence-bold-webfont.eot),
-    src: url(../fonts/eurofurence-bold-webfont.woff),
-    src: url(../fonts/eurofurence-bold-webfont.woff2);
+@font-face {
+	font-family: 'Conv_eurof55';
+	src: url('../fonts/eurof55.eot');
+	src: local('☺'), 
+	url('../fonts/eurof55.woff') format('woff'),
+	url('../fonts/eurof55.ttf') format('truetype'),
+	url('../fonts/eurof55.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-    font-family: 'robotolight';
-    src: url('../fonts/roboto-light-webfont.eot');
-    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto-light-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-light-webfont.woff') format('woff'),
-         url('../fonts/roboto-light-webfont.ttf') format('truetype'),
-         url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'Conv_Roboto-Light';
+	src: url('../fonts/Roboto-Light.eot');
+	src: local('☺'),
+	url('../fonts/Roboto-Light.woff') format('woff'),
+	url('../fonts/Roboto-Light.ttf') format('truetype'),
+	url('../fonts/Roboto-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
 @font-face {
-    font-family: 'robotomedium';
-    src: url('../fonts/roboto-medium-webfont.eot');
-    src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-medium-webfont.woff') format('woff'),
-         url('../fonts/roboto-medium-webfont.ttf') format('truetype'),
-         url('../fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'Conv_3967';
+	src: url('../fonts/3967.eot');
+	src: local('☺'), 
+	url('../fonts/3967.woff') format('woff'),
+	url('../fonts/3967.ttf') format('truetype'),
+	url('../fonts/3967.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face {
-    font-family: 'robotothin';
-    src: url('../fonts/roboto-thin-webfont.eot');
-    src: url('../fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
-         url('../fonts/roboto-thin-webfont.woff') format('woff'),
-         url('../fonts/roboto-thin-webfont.ttf') format('truetype'),
-         url('../fonts/roboto-thin-webfont.svg#robotothin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /*  //////////////////////         ///////////////////////////     */
 
 body {
     background: #FBFBFB;
-    font-family: "Roboto", sans-serif;
+    font-family: "Conv_Roboto-Light", sans-serif;
     font-weight: 300;
 }
 h1 {
     font-weight: 500;
     margin: 0;
-    font-family: "eurofurence", sans-serif;
+    font-family: "Conv_eurof55", sans-serif;
 }
 h6{
     font-size: 12px;
@@ -69,7 +48,7 @@ h6{
 }
 h2 {
     font-weight: 500;
-    font-family: eurofurence;
+    font-family: "Conv_eurof55", sans-serif;
 }
 .logotype {
 	padding-bottom: 30px;
@@ -97,7 +76,7 @@ h2 {
     padding-top: 60px;
     padding-left: 0;
     padding-right: 0;
-    font-family: "Roboto",sans-serif;
+    font-family: "Conv_Conv_Roboto-Light-Light",sans-serif;
     font-weight: 300;
 }
 .info-box1 a{
@@ -110,13 +89,13 @@ h2 {
     position: relative;
     width: 160px;
     overflow: hidden; 
-    font-family: "Roboto",sans-serif;
+    font-family: "Conv_Conv_Roboto-Light-Light",sans-serif;
     font-weight: 300;
     color: #919191;
     float: left;
 }
 .info-select-box option {
-    font-family: "Roboto",sans-serif;
+    font-family: "Conv_Conv_Roboto-Light-Light",sans-serif;
     font-weight: 300;
     color: #919191;   
 }
@@ -193,7 +172,7 @@ h2 {
     color: #909090;
     padding: 10px 15px;
     text-align: center;
-    font-family: "Roboto",sans-serif;
+    font-family: "Conv_Roboto-Light",sans-serif;
     font-weight: 300;
 }
 /*   //////////////////////////      кнопки выбора        //////////////////////      */
@@ -229,6 +208,7 @@ h2 {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     border-radius: 6px;
+    
 }
 .select-box a{
     display: block;
@@ -289,8 +269,9 @@ h2 {
     background: #de1e29;
     border: 1px solid #de1e29;
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
+    font-family:  "Conv_eurof55", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
     cursor: pointer;
     outline: none;
     border-radius: 6px;
@@ -363,7 +344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .instruction-box1 h2 {
 	text-align: center;
-    font-size: 44px;
+    font-size: 48px;
     padding-top: 60px
 }
 .instruction-box1 h2 span {
@@ -371,7 +352,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .instruction-box1 p{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 20px;
     color: #828282;
 }
@@ -402,7 +383,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 100px; 
     line-height: 88px;
     margin-right: 10px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Conv_3967", sans-serif;
     font-weight: 100;
 }
 .instruction-note p {
@@ -410,11 +391,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     float: right;
     width: 230px;
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
     min-height: 72px;
     margin-bottom: 46px;
-    font-family: "Roboto", sans-serif;
-    color: #494949;
+    font-family: "Conv_3967", sans-serif;
+    color: #343434;
 }
 
 /*     //////////////////      Конец Инструкция для пользователя   //////////////     */
@@ -433,7 +414,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .servises-box1 h2 {
 	text-align: center;
-    font-size: 44px;
+    font-size: 48px;
     padding-top: 60px
 }
 .servises-box1 h2 span {
@@ -441,7 +422,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .servises-box1 p{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 20px;
     color: #828282;
 }
@@ -474,7 +455,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     font-size: 16px;
     margin-bottom: 20px;
     font-style: italic;
-    font-family: "Roboto", sans-serif;
+    font-family: "Conv_Roboto-Light", sans-serif;
     padding-left: 40px;
     padding-top: 10px;
     background: url(../images/for-avtovladel.jpg) no-repeat 0px 1px;
@@ -488,7 +469,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .now-search h2 {
     text-align: center;
-    font-size: 44px;
+    font-size: 48px;
     padding-top: 60px;
 }
 .now-search h2 span {
@@ -496,7 +477,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .now-search p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 20px;
     color: #828282;
     margin-bottom: 50px;
@@ -559,7 +540,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     color: #fff;
     font-size: 23px;
     outline: none;
-    font-family: eurofurence;
+    font-family: "Conv_eurof55", sans-serif;
     font-weight: 700;
 }
 .now-search-button1:hover {
@@ -622,7 +603,7 @@ footer {
     list-style: none;  
 }
 .footer-content ul li a {
-    font-size: 13px;
+    font-size: 12px;
 }
 .footer-content:first-child ul li:nth-child(3){
     margin-bottom: 15px;
