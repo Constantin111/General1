@@ -464,7 +464,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 
 /*       //////////////////        Сейчас ищут             ////////////////               */
 .now-search {
-	background: #F4F4F4;
+	background: #FBFBFB;
 }
 .now-search h2 {
     text-align: center;
