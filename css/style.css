@@ -486,7 +486,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     list-style: none;
     font-size: 1.1em;
     font-weight: 300;
-    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
@@ -519,7 +518,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     max-width: 260px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .now-search-button span {
     display: block;
