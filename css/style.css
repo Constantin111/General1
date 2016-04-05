@@ -233,6 +233,7 @@ h2 {
     position: absolute;
     right: 5px;
     top: 12px;
+    font-family: sans-serif;
     font-size: 35px;
     pointer-events: none;
     -webkit-transform: rotate(90deg); // разворот элемента для разных бразуеров
@@ -275,6 +276,11 @@ h2 {
     cursor: pointer;
     outline: none;
     border-radius: 6px;
+    -webkit-box-shadow: 0px 2px 0 0 #B72025;
+    -moz-box-shadow: 0px 2px 0 0 #B72025;
+    -ms-box-shadow: 0px 2px 0 0 #B72025;
+    -o-box-shadow: 0px 2px 0 0 #B72025;
+    box-shadow: 0px 2px 0 0 #B72025;
 }
 .select-button:hover {
    background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de1e29+1,db6b71+45,207cca+100,207cca+100,de1e29+100&1+0,0.97+100 */
@@ -319,8 +325,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .marker-box1  ul li {
     margin-bottom: 29px;
-    padding-left: 40px;
+    padding-left: 32px;
     position: relative;
+    
+}
+.marker-box1  ul li:first-child{
+    background: url(../images/sprite.png) no-repeat -168px 0;
+}
+.marker-box1  ul li:nth-child(2){
+    background: url(../images/sprite.png) no-repeat ;
+}
+.marker-box1  ul li:last-child{
+    background: url(../images/sprite.png) no-repeat ;
+}
+.marker-box1  ul li p {
+    display: block;
+    background: #FBFBFB;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    margin: 0;
 }
 .marker-box1  ul li img{
     display: block;
@@ -372,12 +396,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     max-width: 300px;
     padding-bottom: 85px;
 }
-.istruction-content img {
-    width: 131px;
-    height: 142px;
+.istruction-content  .img-content {
+    width: 132px;
+    height: 143px;
     display: block;
     float: left;
     margin-left: 21%;
+    
+}
+.img-content1 {
+	background: url(../images/sprite.png) no-repeat 1px -61px;
+}
+.img-content2 {
+	background: url(../images/sprite.png) no-repeat -156px -61px;
+}
+.img-content3 {
+	background: url(../images/sprite.png) no-repeat -311px -61px;
 }
 .instruction-note span {    
     font-size: 100px; 
@@ -451,15 +485,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     float: left;
 }
 .servises-content p {
+	display: block;
+	position: relative;
     color: #5D5D5D;
     font-size: 16px;
+	line-height: 1.5;
     margin-bottom: 20px;
+	margin-top: 3px;
     font-family: "Conv_Roboto-Light", sans-serif;
-    padding-left: 40px;
-    padding-top: 10px;
-    background: url(../images/for-avtovladel.jpg) no-repeat 0px 1px;
+    margin-left: 40px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    background: #FBFBFB;
 }
-
+.servises-content p:before {
+	content: "";
+	background: url(../images/sprite.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	left: -40px;
+	top: -2px;
+	position: absolute;
+}
 /*       ////////////////////        Конец предоставляемых услуг      ////////////      */
 
 /*       //////////////////        Сейчас ищут             ////////////////               */
@@ -541,6 +588,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     outline: none;
     font-family: "Conv_eurof55", sans-serif;
     font-weight: 700;
+    -webkit-box-shadow: 0px 2px 0 0 #B72025;
+    -moz-box-shadow: 0px 2px 0 0 #B72025;
+    -ms-box-shadow: 0px 2px 0 0 #B72025;
+    -o-box-shadow: 0px 2px 0 0 #B72025;
+    box-shadow: 0px 2px 0 0 #B72025;
 }
 .now-search-button1:hover {
     box-shadow: 1px 1px 0px 1px #812c30;
