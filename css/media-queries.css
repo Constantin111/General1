@@ -18,4 +18,13 @@
     .add-company a {
         margin-left: 25px;
     }
+    .now-search-button1, .now-search-button2 {
+        display: block;
+        float: none;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .now-search-button span {
+        margin: 20px;
+    }
 }

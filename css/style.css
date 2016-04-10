@@ -659,7 +659,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     text-align: center;
     font-size: 16px;
     padding-top: 20px;
-    color: #828282;
+    color: #7C7C7C;
 }
 .servises-box2,.servises-box3 {    
     padding-bottom: 70px;
@@ -688,7 +688,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 .servises-content p {
 	display: block;
 	position: relative;
-    color: #5D5D5D;
+    color: #343434;
     font-size: 16px;
 	line-height: 1.5;
     margin-bottom: 20px;
