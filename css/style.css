@@ -534,7 +534,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     background: url(../images/sprite.png) no-repeat -168px 0;
 }
 .marker-box1  ul li:nth-child(2){
-    background: url(../images/sprite.png) no-repeat ;
+    background: url(../images/sprite.png) no-repeat -130px 0px;
 }
 .marker-box1  ul li:last-child{
     background: url(../images/sprite.png) no-repeat ;
