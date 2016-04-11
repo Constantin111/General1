@@ -805,16 +805,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
     box-shadow: 0px 2px 0 0 #B72025;
 }
 .now-search-button1:hover {
-    
+    box-shadow: 0px 0px 0px 1px #812c30;
+    -webkit-box-shadow: 0px 0px 0px 1px #812c30;
+    -moz-box-shadow: 0px 0px 0px 1px #812c30;
+    -ms-box-shadow: 0px 0px 0px 1px #812c30;
+    -o-box-shadow: 0px 0px 0px 1px #812c30;
     border: none;
     background: #E4242F;   
 }
 .now-search-button1:active {
-    box-shadow: 0px 0px 3px 1px #812c30;
-    -webkit-box-shadow: 0px 0px 3px 1px #812c30;
-    -moz-box-shadow: 0px 0px 3px 1px #812c30;
-    -ms-box-shadow: 0px 0px 3px 1px #812c30;
-    -o-box-shadow: 0px 0px 3px 1px #812c30;  
+    box-shadow: none;   
     border: none;
     background: #E4242F;   
 }
