@@ -494,23 +494,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de1e29', end
 }
 .select-button:hover {
     background: #e4242f;
+    box-shadow: 0px 0px 0px 1px #812c30;
+    -webkit-box-shadow: 0px 0px 0px 1px #812c30;
+    -moz-box-shadow: 0px 0px 0px 1px #812c30;
+    -ms-box-shadow: 0px 0px 0px 1px #812c30;
+    -o-box-shadow: 0px 0px 0px 1px #812c30;
     
-    
-/*
-    box-shadow: 1px 1px 0px 1px #812c30;
-    -webkit-box-shadow: 1px 1px 0px 1px #812c30;
-    -moz-box-shadow: 1px 1px 0px 1px #812c30;
-    -ms-box-shadow: 1px 1px 0px 1px #812c30;
-    -o-box-shadow: 1px 1px 0px 1px #812c30;  
-*/
 }
 .select-button:active{
     border: none;
-   box-shadow: 0px 0px 3px 1px #812c30;
-    -webkit-box-shadow: 0px 0px 3px 1px #812c30;
-    -moz-box-shadow: 0px 0px 3px 1px #812c30;
-    -ms-box-shadow: 0px 0px 3px 1px #812c30;
-    -o-box-shadow: 0px 0px 3px 1px #812c30;  
+   box-shadow: none;  
 }
 
 /*    ///////////////////////        Значения иконок       ///////////////         */
