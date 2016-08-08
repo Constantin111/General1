@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BibiHelper</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-skin.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script type='text/javascript' src='js/select.js'></script>
+    
+    
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+   
+    <div class="container-fluid">
+        <header class="header container">
+           <div class="logotype clearfix">
+                <div class="col-md-6 col-sm-12 logo">
+                    <a href=""><img src="images/logo.jpg" alt="lotogip"></a>
+                </div>
+                <div class="col-md-6 col-sm-12 logo-2">
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
+                        <div class="add-company">
+                                <a href="">Добавить компанию</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
+                        <div class="info-select-box">
+                           <form name="" action="#">								
+								<select class="turnintodropdown select-info-box">
+									<option>Выберите город </option>
+									<option>Новосибирск</option>
+									<option>Красноярск</option>
+									<option>Самара</option>
+									<option>Волгоград</option>
+								</select>
+    						</form>
+<!--
+                            <select name="" id="" class="select-info-box">
+                                <option value="">Выберите город</option>
+                                <option value="">Новосибирск</option>
+                                <option value="">Красноярск</option>
+                                <option value="">Самара</option>
+                                <option value="">Волгоград</option>
+                            </select>
+-->
+                            <span class="select-cursor">&#8250;</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
+                        <div class="personal-account">
+                                <a href="">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>                                    
+            </div>
+            
+            <div class="instruction-box1">
+                <h2>Заявка на <span>регистрацию СТО</span></h2>
+                <p>Укажите информацию о СТО - контактные данные. Сведения будут видны посетителям<br>портала BiBiHelper.ru при поиске сервиса</p>
+            </div>
+        </header>
+        <main class="main">
+           
+            <form name="" class="form-application" action="" id="">
+                <p>Основная информация</p>
+                <div class="form-group form-group-1">
+                     <div class="form-left-side">
+                        <label for="servis-select">Тип сервиса</label>
+                    </div>
+                    <div class="form-right-side">
+                      <div class="select-servis">
+
+                           <div class="select-box">
+                               <div class="select-box1">                       
+                                    <select id="servis-select" class="turnintodropdown select-work">
+                                        <option value="">Автосервис</option>
+                                        <option value="">Автосервис</option>
+                                        <option value="">Мойка</option>
+                                        <option value="">Шиномонтаж</option>
+                                    </select>
+                                    <span class="select-cursor">&#8250;</span>                        
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-name">Название автосервиса</label>
+                        </div>
+                        <div class="form-right-side">
+                            <div class="select-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-name" type="text" placeholder="Название автосервиса">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Контактная информация</p>
+                <div class="form-group form-group-2">                     
+<!-- ////////////////                 селект Регион                  //////////////////// -->
+                   <div class="form-left-side">
+                        <label for="servis-select">Регион</label>
+                    </div>
+                    <div class="form-right-side">
+                      <div class="select-servis">
+
+                           <div class="select-box">
+                               <div class="select-box1">                       
+                                    <select id="servis-select" class="turnintodropdown select-work">
+                                        <option value="">Выберите регион</option>
+                                        <option value="">Автосервис</option>
+                                        <option value="">Мойка</option>
+                                        <option value="">Шиномонтаж</option>
+                                    </select>
+                                    <span class="select-cursor">&#8250;</span>                        
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+<!-- ////////////////                 селект Город                 //////////////////// -->                   
+                   <div class="form-left-side">
+                        <label for="servis-select">Город</label>
+                    </div>
+                    <div class="form-right-side">
+                      <div class="select-servis">
+                           <div class="select-box">
+                               <div class="select-box1">                       
+                                    <select id="servis-select" class="turnintodropdown select-work">
+                                        <option value="">Выберите город</option>
+                                        <option value="">Автосервис</option>
+                                        <option value="">Мойка</option>
+                                        <option value="">Шиномонтаж</option>
+                                    </select>
+                                    <span class="select-cursor">&#8250;</span>                        
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-district">Район</label>
+                        </div>
+                        <div class="form-right-side">
+                            <div class="select-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-district" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-strit">Улица</label>
+                        </div>
+                        <div class="form-right-side">
+                            <div class="select-box strit-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-strit" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-house">Дом</label>
+                        </div>
+                        <div class="form-right-side">
+                            <div class="select-box little-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-house" type="text" value="">
+                                </div>                                
+                            </div>
+                            <div class="servis-name-house">
+                               <div class="form-left-side">
+                                    <label for="servis-house">Корпус</label>
+                                </div>
+                                <div class="form-right-side">
+                                    <div class="select-box little-box">
+                                        <div class="select-box1">                      
+                                            <input id="servis-house" type="text" value="">
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-building">Строение</label>
+                        </div>
+                        <div class="form-right-side">
+                            <div class="select-box little-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-building" type="text" value="">
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-tel">Номер телефона</label>
+                        </div>
+                        <div class="form-right-side">
+                            <div class="select-box strit-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-tel" type="tel" value=""placeholder="+7(_ _ _)_ _ _ - _ _ - _ _"   pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servis-name">
+                       <div class="form-left-side">
+                            <label for="servis-tel2">Номер телефона 2</label>
+                        </div>                       
+                        <div class="form-right-side">
+                            <div class="select-box strit-box">
+                                <div class="select-box1">                      
+                                    <input id="servis-tel2" type="tel" name="tel" value="" placeholder="+7(_ _ _)_ _ _ - _ _ - _ _" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                </div>
+                                <script type="text/javascript">
+                                    jQuery(function($){
+                                       $("#phone").mask("+7 (999) 999-9999");
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>// <![CDATA[
+jQuery(function($){ $("#phone").mask("+7(999)999-99-99"); });
+// ]]&gt;</script>
+<input placeholder='+7(987)654-32-10'
+pattern="+7([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+type="tel" id='phone' name='tel' required=' ' autofocus>
+          </form>
+              
+        </main>
+        
+        <!--                                Footer - Подвал                            -->
+   
+    <footer>
+       <section class="footer clearfix">
+           <div class="col-md-8 footer-box1 clearfix">
+               <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
+                   <h6>О проекте</h6>
+                   <ul>
+                       <li><a href="">Как это работает</a></li>
+                       <li><a href="">Новости</a></li>
+                       <li><a href="">Вакансии</a></li>
+                       
+                   </ul>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
+                   <h6>Автовладельцам</h6>
+                   <ul>
+                       <li><a href="">Поиск</a></li>
+                       <li><a href="">Расширенный поиск</a></li>
+                       <li><a href="">Автотехцентры</a></li>
+                       
+                   </ul>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-6 footer-content">
+                   <h6>Компаниям</h6>
+                   <ul>
+                       <li><a href="">Добавить компанию</a></li>
+                    </ul>
+                    <h6 class="self-room">Личный кабинет</h6>
+                    <ul>  
+                       <li><a href="">Вход</a></li>
+                       <li><a href="">Регистрация</a></li>
+                   </ul>
+               </div>            
+           </div>
+           <div class="footer-box2 col-md-4">
+               <h6>Мы в социальных сетях</h6>
+               <ul>
+                   <li><a href="https://vk.com/" target="_blank"><img src="images/vkontakte.jpg" alt="Вконтакте"></a></li>
+                   <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fasebook.jpg" alt="Фэйсбук"></a></li>
+                   <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter.jpg" alt="Твиттер"></a></li>
+               </ul>
+               <a href="" class="qwestion">
+                  <img src="images/qwestion.jpg" alt="Вопрос">
+                   <h6>    Остались  вопросы?</h6>
+               </a>
+           </div>
+       </section>
+        <div class="copyright">
+           <p>&copy; 2015-2016 BiBiHelper - информационная автомобильная система</p>
+        </div>
+    </footer> 
+    </div>
+    
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.min.js"></script>
+</body>
+</html>

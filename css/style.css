@@ -955,4 +955,119 @@ footer {
     vertical-align: bottom;
 }
 
+/*////////////////////////               application.html           ////////////////////////*/
+
+header .instruction-box1 p {
+    padding-top: 0px;
+    margin-bottom: 50px;
+}
+header .instruction-box1 h2 {
+    padding-top: 20px;
+}
+.form-application {
+    display: block;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.form-application p {
+    padding-top: 20px;
+}
+.form-group {
+    background: #F4F4F4;
+    text-align: center;
+    border-radius: 2px;
+    padding: 60px 0px;
+}
+.select-servis {
+    width: 260px;
+    display: block;
+    text-align: left;   
+}
+.select-servis .select-box .select-box1 .trigger {
+    padding: 11px 25px;
+    text-align:center;
+}
+.select-servis .select-box .select-box1 .activetrigger {
+    padding: 11px 25px;
+    text-align:center;
+}
+.select-servis .select-box .select-box1 .activetrigger:hover {
+    padding: 11px 25px;
+    text-align:center;
+}
+.select-servis .select-cursor {
+    top: -2px;
+    right: 10px;
+}
+#servis-name,#servis-district,#servis-strit,
+#servis-house,#servis-building {
+    border: none;
+    outline: none;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    margin-left: 5px;
+}
+#servis-tel,#servis-tel2 {
+    border: none;
+    outline: none;
+    width: 95%;
+    height: 100%;
+    text-align: left;
+    margin-left: 5px;
+    padding-left: 60px;
+}
+.servis-name .select-box {
+    padding-bottom: 0;
+    width: 370px;
+}
+.form-left-side {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-right-side {
+    display: inline-block;
+    width: 59%;
+    text-align: left;
+    padding-left: 10px;
+}
+.form-group-2 .servis-name .select-box {
+    padding-bottom: 33px;
+    width: 370px;
+}
+.form-group-2 .servis-name:last-child .select-box {
+    padding-bottom: 0px;
+}
+.form-group-2 .servis-name .strit-box {
+    width: 270px;
+}
+.form-group-2 .servis-name .little-box {
+    width: 70px;
+    display: inline-block;
+}
+.form-group-2 .servis-name .little-box #servis-house,#servis-building {
+    width: 87%;
+}
+.servis-name-house {
+    display: inline-block;
+    width: 187px;
+}
+.servis-name-house .form-left-side {
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+    padding-right: 10px;
+}
+.servis-name-house .form-right-side {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+    padding-left: 10px;
+}
+    
+
 
